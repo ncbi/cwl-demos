@@ -1,0 +1,10 @@
+t_flag:
+   class: File
+   path:  database_taxonomy.tsv
+
+o_flag:
+   class: File
+   path:  outlier.txt
+
+out_flag: consensus_taxonomy.txt
+

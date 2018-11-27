@@ -1,0 +1,10 @@
+query_flag:
+   class: File
+   path:  query.fasta
+
+db_flag: user_db
+
+blastdb_dir:
+  class: Directory
+  path: blastdb
+

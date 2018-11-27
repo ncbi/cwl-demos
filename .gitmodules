@@ -1,0 +1,3 @@
+[submodule "outlier-hit-detection-pipeline/outlier_in_BLAST_hits"]
+	path = outlier-hit-detection-pipeline/outlier_in_BLAST_hits
+	url = https://github.com/shahnidhi/outlier_in_BLAST_hits.git

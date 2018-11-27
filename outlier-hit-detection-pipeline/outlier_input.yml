@@ -1,0 +1,10 @@
+q_flag:
+   class: File
+   path:  query.fasta
+
+b_flag:
+   class: File
+   path:  blast.out
+
+out_flag: outlier.txt
+
