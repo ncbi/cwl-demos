@@ -1,6 +1,6 @@
 user_db_dir: 
   class: Directory
-  path:       /home/merezhuk/work/NCBI_oficcial/cwl-demos/outlier-hit-detection-pipeline/blastdb
+  path:        PATH-TO-BLASTDB
 user_search_db: user_db
 user_search_db_tsv:
   class: File
