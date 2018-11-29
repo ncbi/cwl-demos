@@ -25,7 +25,7 @@ fi
 VENV=$1
 
 if [ ! -d ${VENV} ] ; then
-	virtualenv -p python3 ${VENV}
+	virtualenv -p python ${VENV}
 fi
 
 if [ ! -f "${VENV}/bin/activate" ] ; then
