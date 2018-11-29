@@ -4,6 +4,7 @@ PMID: 29588650 PMCID: PMC5863388 DOI: 10.1186/s13015-018-0126-3
 
 It illustrates simplicity usage of  dockerized versions of BLAST tools and python scripts
 by the common workflow language (CWL).
+![outliers finding workflow](docs/images/blast_outliers_cwl.png)
 
 Whole workflow is divided into four steps:
 1. creation custom BLAST DB 
@@ -12,11 +13,13 @@ Whole workflow is divided into four steps:
 4. assign taxonomy
 
 Due to size and performance consideration first step is deliberately taken from CWL workflow and presented 
-as distinguished shell script "step_makeblastdb.sh". After this step custom "user_db" will be created subdirectory
-"blastdb" in current folder.  Fully qualified location of this "blastdb" directory will be written
- to the run_workflow_234_input.yml file.
+as distinguished "step_makeblastdb.sh" shell script. After this step finishes, custom "user_db" will be created 
+in "blastdb" subdirectory. 
 
-In case of different user requirements,  creation of BLASTD database modification of the  run_workflow_234_input.yml
+Absolute location of this "blastdb" directory will be written to the run_workflow_234_input.yml file substituting 
+PATH-TO-BLASTDB  placeholder.
+
+In case of different user requirements,  creation of BLASTD database and modification of the run_workflow_234_input.yml
 needs to be done accordingly.
 
 The rest of steps (2-3-4)  are combined into one CWL run_workflow_234.cwl  with corresponding input.
