@@ -13,7 +13,7 @@
 #
 #
 
-# run makeblastdb program using christiam/blast:latest docker image
+# run makeblastdb program using ncbi/blast:latest docker image
 # input: database.fasta
 # output: ./blastdb/user_db.* 
 # attention:
@@ -35,8 +35,8 @@ fi
 #  current directory will be mounted read/write under name '/in_out' inside docker image
 #
 DOCKER_MOUNT_1=`pwd`:/in_out:rw
-#DEBUG/INFO: show files in output directory: docker run  --rm -ti --volume $DOCKER_MOUNT_1 christiam/blast:latest  bash -c "ls -l /in_out/blastdb/"
-docker run  --rm -ti --volume $DOCKER_MOUNT_1 christiam/blast:latest makeblastdb -in /in_out/database.fasta -out /in_out/blastdb/user_db  -dbtype nucl
+#DEBUG/INFO: show files in output directory: docker run  --rm -ti --volume $DOCKER_MOUNT_1 ncbi/blast:latest  bash -c "ls -l /in_out/blastdb/"
+docker run  --rm -ti --volume $DOCKER_MOUNT_1 ncbi/blast:latest makeblastdb -in /in_out/database.fasta -out /in_out/blastdb/user_db  -dbtype nucl
 if [ ! -f ./blastdb/user_db.nhr ] ; then
 	echo "ERROR: file ./blastdb/user_db.nhr  is missing, most likely BLAST DB creation step FAILED"
 	exit 1

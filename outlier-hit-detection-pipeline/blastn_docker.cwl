@@ -11,7 +11,7 @@ label: Example CWL script to run a BLAST search in docker
 baseCommand: blastn
 hints:
   DockerRequirement:
-    dockerPull: christiam/blast
+    dockerPull: ncbi/blast
 inputs:
   blastdb_dir:
     type: Directory?
