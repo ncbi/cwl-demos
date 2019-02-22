@@ -25,7 +25,7 @@ needs to be done accordingly.
 The rest of steps (2-3-4)  are combined into one CWL run_workflow_234.cwl  with corresponding input.
 
 System requirements to run example workflow:
-Python interpreter and virtualenv package available
+Python/Python3 interpreter and virtualenv package are available and python is python3 version >= 3.6
 Docker installed and user assigned to the docker group
 
 How to run:
