@@ -13,33 +13,6 @@
 #
 #
 
-# checking prerequisites 
-# 1) docker installed and current user added to the 'docker' group
-# 2) python3 is installed and it is default 
-
-in_docker_group=`groups $USER | tr -s " " "\n" | grep docker | wc -l`
-if [ $in_docker_group != "1" ] ; then
-	echo "Please add this user to the docker group and logout/login."
-	echo "Exiting."
-	exit
-else
-	echo "Prerequisite: user $USER in the docker group - OK"	
-fi	
-
-# minimal python version
-MIN_PYTHON_VER="3.6"
-python_version_full=`python --version | awk '{ print $2}'`
-python_version_2=`echo $python_version_full | cut -d. -f1,2`
-cmp_python_ver_res=`expr $python_version_2 \< $MIN_PYTHON_VER`
-
-if [ $cmp_python_ver_res = 1 ] ; then
-	echo "Please install Python version >= $MIN_PYTHON_VER. Current: $python_version_full"
-	echo "Exiting."
-	exit
-else	
-    echo "Prerequisite: Python version is $python_version_full  -- OK"
-fi
-
 #
 # this script will run
 # a) BLAST DB creation step using dockerized version of the blastmakedb utility
