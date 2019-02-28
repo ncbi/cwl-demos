@@ -25,8 +25,9 @@ needs to be done accordingly.
 The rest of steps (2-3-4)  are combined into one CWL run_workflow_234.cwl  with corresponding input.
 
 System requirements to run example workflow:
-Python/Python3 interpreter and virtualenv package are available and python is python3 version >= 3.6
-Docker installed and user assigned to the docker group
+1.Python/Python3 interpreter and virtualenv package are available
+(if python3 only is installed, it should be aliased as python )
+2.Docker installed and user assigned to the docker group
 
 How to run:
 1. git clone --recurse-submodules    https://github.com/ncbi/cwl-demos.git
@@ -39,6 +40,8 @@ At first run will trigger download of two Docker images which may take some time
 At the end of execution in current directory will be created "consensus_taxonomy.txt" report
 
 Please check script itself for separate steps and article for more detailed explanation of outlier detection algorithm
+
+There are few helper scripts in utils subdirectory to help you install docker and python on Ubuntu.
 
 Thank you
 

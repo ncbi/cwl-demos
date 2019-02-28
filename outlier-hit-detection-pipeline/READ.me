@@ -22,7 +22,8 @@ needs to be done accordingly.
 The rest, all steps 2-3-4 are combined on one CWL  run_workflow_234.cwl  with corresponding input.
 
 System requirements to run example workflow:
-Python interpreter and virtualenv package available
+Python interpreter and virtualenv package available 
+(if python3 only is installed, it should be aliased as python )
 Docker installed and user assigned to the docker group
 
 How to run:
@@ -36,6 +37,9 @@ At first run will trigger downloading of two Docker images which may take some t
 At the end of execution in current directory will be created "consensus_taxonomy.txt" report
 
 Please check script itself for separate steps and article for more detailed explanation of outlier detection algorithm
+
+There are few helper scripts in utils subdirectory to help you install docker and python on Ubuntu.
+
 
 Thank you
 BLAST group 
