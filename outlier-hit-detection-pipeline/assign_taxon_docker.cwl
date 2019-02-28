@@ -11,7 +11,7 @@ class: CommandLineTool
 baseCommand: assign_taxon.py
 hints:
   DockerRequirement:
-    dockerPull: merezhuk/outlier-hit-detection
+    dockerPull: ncbi/outlier-hit-detection
 inputs:
   t_flag:
     type: File?
