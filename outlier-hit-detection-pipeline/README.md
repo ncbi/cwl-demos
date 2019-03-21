@@ -2,7 +2,7 @@ This is an example CWL workflow based on article
 "Outlier detection in BLAST hits" by Nidhi Shah , Stephen F. Altschul,  Mihai Pop
 PMID: 29588650 PMCID: PMC5863388 DOI: 10.1186/s13015-018-0126-3
 
-It illustrates simplicity usage of  dockerized versions of BLAST tools and python scripts
+It illustrates simplicity of usage of  dockerized version of BLAST tools and python scripts
 by the common workflow language (CWL).
 ![outliers finding workflow](docs/images/blast_outliers_cwl.png)
 
@@ -25,13 +25,14 @@ needs to be done accordingly.
 The rest of steps (2-3-4)  are combined into one CWL run_workflow_234.cwl  with corresponding input.
 
 System requirements to run example workflow:
-1.Python/Python3 interpreter and virtualenv package are available
-(if python3 only is installed, it should be aliased as python )
+1.Python3 interpreter and virtualenv package are available
 2.Docker installed and user assigned to the docker group
 
 How to run:
 1. git clone --recurse-submodules    https://github.com/ncbi/cwl-demos.git
 2. cd cwl-demos/outlier-hit-detection-pipeline 
+3. utils/ubuntu_install_python3.sh
+3. utils/ubuntu_install_docker.sh	# do not forget to log out and re-login
 3. ./run_workflow_1234.sh
 4. final results are in  consensus_taxonomy.txt file
 

@@ -25,7 +25,7 @@ fi
 VENV=$1
 
 if [ ! -d ${VENV} ] ; then
-	virtualenv -p python ${VENV}
+	virtualenv -p python3 ${VENV}
 fi
 
 if [ ! -f "${VENV}/bin/activate" ] ; then
@@ -33,7 +33,7 @@ if [ ! -f "${VENV}/bin/activate" ] ; then
 	exit 1
 fi
 
-. ${VENV}/bin/activate && pip install -q -r requirements.txt
+. ${VENV}/bin/activate && pip3 install -q -r requirements.txt
 
 exit 0
 
