@@ -1,0 +1,6 @@
+.venv
+blastdb
+consensus_taxonomy.txt
+database_taxonomy.tsv
+*.fasta
+typescript
