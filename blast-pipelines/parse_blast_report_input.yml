@@ -1,0 +1,7 @@
+length_flag: 100
+percent_flag: 40.0
+idsonly_flag: 1
+in_flag:
+   class: File
+   path: blast_tabular.tab
+

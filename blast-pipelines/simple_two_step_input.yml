@@ -1,0 +1,13 @@
+user_db_dir: 
+  class: Directory
+  path:         blastdb
+user_search_db: landmark_v5
+user_query:
+  class: File
+  path: p02185.fsa
+user_outfmt_flag: "6 qaccver saccver bitscore pident qcovhsp qlen length staxids sscinames"
+user_parse_results: parse.tab
+user_length_flag: 100
+user_percent_flag: 40.0
+user_idsonly_flag: 1
+

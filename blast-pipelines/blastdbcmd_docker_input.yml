@@ -1,0 +1,16 @@
+#entry_flag: NP_005359.1
+
+entry_batch_flag: 
+  class: File
+  path:  accs.in
+
+db_flag: landmark_v5
+
+#target_flag: true
+
+blastdb_dir:
+  class: Directory
+  path: blastdb
+
+outfmt_flag: "%a %T %S"
+

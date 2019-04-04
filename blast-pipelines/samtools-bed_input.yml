@@ -1,0 +1,7 @@
+bedfile:
+   class: File
+   path: regions.bed
+input: 
+   class: File
+   path: SRR5009494_sort.bam
+output_file: bedcov1.out

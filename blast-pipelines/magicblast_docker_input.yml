@@ -1,0 +1,13 @@
+#query_flag:
+#   class: File
+#   path:  u00001.fsa
+
+sra_flag: SRR5009494
+
+blastdb_dir:
+  class: Directory
+  path: blastdb
+
+db_flag: GCF_000001405.38_top_level
+
+out_flag: SRR5009494.sam

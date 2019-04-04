@@ -1,0 +1,15 @@
+query_flag:
+   class: File
+   path:  p02185.fsa
+
+blastdb_dir:
+  class: Directory
+  path: blastdb
+
+db_flag: landmark_v5
+
+taxid_flag: "9606"
+
+out_flag: blastp.out
+
+outfmt_flag: "6 qaccver saccver bitscore pident qcovhsp qlen length staxids sscinames"
