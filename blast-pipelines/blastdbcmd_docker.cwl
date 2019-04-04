@@ -4,7 +4,7 @@
 
 cwlVersion: v1.0
 class: CommandLineTool
-label: Example CWL script to run a BLAST search in docker
+label: Blastdbcmd to dump seqs/info.
 baseCommand: blastdbcmd
 hints:
   DockerRequirement:

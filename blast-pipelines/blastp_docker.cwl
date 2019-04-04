@@ -9,7 +9,7 @@
 
 cwlVersion: v1.0
 class: CommandLineTool
-label: Example CWL script to run a BLAST search in docker
+label: BLASTP search.
 baseCommand: blastp
 hints:
   DockerRequirement:

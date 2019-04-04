@@ -6,22 +6,27 @@
 
 cwlVersion: v1.0
 class: CommandLineTool
-baseCommand: /home/madden/CWL_FILES/parse_blast_report.py
+label: Parses BLAST tabular.
+baseCommand: parse_blast_report.py
 inputs:
   length_flag:
     type: int
+    label: Length of match
     inputBinding:
       position: 1
   percent_flag:
     type: float
+    label: Min percent ID
     inputBinding:
       position: 2
   idsonly_flag:
     type: int
+    label: produce only IDs
     inputBinding:
       position: 3
   in_flag:
     type: File
+    label: BLAST tabular output
     inputBinding:
       position: 4
   out_flag:
