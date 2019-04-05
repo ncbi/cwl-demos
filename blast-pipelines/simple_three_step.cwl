@@ -9,6 +9,7 @@
 
 cwlVersion: v1.0
 class: Workflow
+label: BLASTP, parse, dump FASTA
 inputs:
   user_db_dir: Directory?
   user_query: File
