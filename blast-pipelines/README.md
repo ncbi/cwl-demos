@@ -25,6 +25,9 @@ You can modify the python script (it's called `parse_blast_report.py`) to make i
 
 Also, you are not limited to the CWL modules in this directory or the ones you write.  There's a bunch of CWL modules [here][cwl_mods].  One of the workflows in this directory (`magicblast2bami.cwl`) uses the samtools workflows from that directory to produce a sorted/indexed BAM file from the original SAM file that Magic-BLAST produces.  These modules use a dockerized version of samtools, so you don't even need to compile and install samtools! 
 
+### Can I visualize my pipeline?
+Sure.  You can use the CWL viewer [here][cwlviewer].  To see what this looks like, take a look at the plot for the [simple_three_step][three_step_view] workflow.
+
 ### Why docker?
 We've dockerized BLAST for our pipelines for a couple of different reasons.  One is that it makes the setup of BLAST on a cloud instance very simple.  Another is that docker plays nicely with CWL.  
 
@@ -73,5 +76,7 @@ Sure.  Look at the table below.
 [blast_in_cloud]: https://docs.google.com/presentation/d/1kgIiF2jGZwqLZ1eqyM8ihMtZEwd8w3Bq3IwTIa2AQ-0/edit#slide=id.p
 [blast_in_cloud]: https://docs.google.com/presentation/d/1kgIiF2jGZwqLZ1eqyM8ihMtZEwd8w3Bq3IwTIa2AQ-0/edit?usp=sharing
 [blast_well]: https://ftp.ncbi.nlm.nih.gov/pub/education/public_webinars/2018/10Oct03_Using_BLAST/Using_BLAST_Well2.pdf
+[cwlviewer]:https://view.commonwl.org
+[three_step_view]: https://w3id.org/cwl/view/git/881c04b0ffd908244f838ff24a530e381ddfa34a/blast-pipelines/simple_three_step.cwl
 
 
