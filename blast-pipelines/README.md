@@ -9,13 +9,13 @@ Many pipeline are written in an ad hoc manner using the scripting language at ha
 ### What's here that's interesting?
 Enough talk.  What's in this directory that I should look at?  
 
-First, you should take a quick read through the [CWL User Guide][cwl_man] (admittedly, that's not in this directory).  Then, you could start by looking at a simple BLASTP search.  Every CWL task requires two files.  The first one specifies the tools and the structure of the work.  The second specifies the arguments to your tools.  For the BLASTP search, you'd execute:
+First, you should take a quick read through the [CWL User Guide][cwl_man] (admittedly, that's not in this directory).  Then, you could start by looking at a simple BLASTP search.  Every CWL task requires two files.  The first one specifies the tools and the structure of the work.  The second specifies the arguments to your tools.  For the BLASTP search, you'd execute (TODO: install database):
 
    ```bash
    cwl-runner blastp_docker.cwl blastp_docker_input.yml
    ```
 
-This command just runs a BLASTP search and produces BLAST output.  In the parlance of CWL this module has the class "CommandLineTool".  That's good, but it would be more interesting to run a pipeline where the BLASTP search is just one part of it.  The command below runs BLASTP, then parses the tabular output with a python script:
+This command just runs a BLASTP search and produces BLAST output.  In the parlance of CWL this module has the class "CommandLineTool".  That's good, but it would be more interesting to run a pipeline where the BLASTP search is just one part of it.  The command below runs BLASTP, then parses the tabular output with a python script (TODO: set path with: export PATH="$PATH:$PWD"):
 
    ```bash
    cwl-runner simple_two_step.cwl simple_two_step_input.yml
