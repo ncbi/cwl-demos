@@ -1,0 +1,12 @@
+query_flag:
+   class: File
+   path:  query.fasta
+
+db_flag: GCF_000001405.38_top_level
+
+blastdb_dir:
+  class: Directory
+  path: blastdb
+
+outfmt_flag: "6 qaccver saccver bitscore pident qcovhsp qlen length staxids sscinames"
+
