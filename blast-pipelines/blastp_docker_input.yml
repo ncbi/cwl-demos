@@ -6,7 +6,7 @@ blastdb_dir:
   class: Directory
   path: blastdb
 
-db_flag: landmark_v5
+db_flag: landmark
 
 taxid_flag: "9606"
 

@@ -1,11 +1,11 @@
 #!/usr/bin/env cwl-runner
 
-# Run awk on blast results
-# awk_script.sh INPUT OUTPUT
-#    
+# From http://bioinformatics.cvr.ac.uk/blog/essential-awk-commands-for-next-generation-sequence-analysis/
+# Get all reads, excluding headers.
+#
 cwlVersion: v1.0
 class: CommandLineTool
-baseCommand: /home/madden/SIMPLE_STEPS/awk_script.sh
+baseCommand: ["sh", "awk_script.sh"]
 inputs:
   b_flag:
     type: File
@@ -13,12 +13,19 @@ inputs:
         position: 1
   out_flag:
     type: string
-    default: "awk_blast.txt"
+    default: awk_out.txt
     inputBinding:
         position: 2
 
+requirements:
+    InitialWorkDirRequirement:
+        listing:
+           - entryname: awk_script.sh
+             entry: |-
+                cat $(inputs.b_flag.path) | awk '$1!~/^@/' 
+
+
 outputs:
   awk_results:
-     type: File
-     outputBinding:
-        glob: $(inputs.out_flag)
+     type: stdout
+stdout: $(inputs.out_flag)

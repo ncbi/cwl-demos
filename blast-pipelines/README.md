@@ -51,7 +51,6 @@ Sure.  Look at the table below.
 |blastdbcmd_docker.cwl | blastdbcmd_docker_input.yml | CommandLineTool | Fetch info from BLAST database | database |
 |magicblast_docker.cwl | magicblast_docker_input.yml | CommandLineTool | Align sequences | database | 
 |parse_blast_report.cwl | parse_blast_report_input.yml | CommandLineTool | parse tabular output | Tabular input |
-|samtools-bed.cwl | samtools-bed_input.yml | CommandLineTool | produce BED file from BAM | Workflows from [here][cwl_mods]|
 |simple_two_step.cwl | simple_two_step_input.yml | Workflow | BLASTP search and parse tabular | database, query file, parse_blast_report.py, add location of parse_blast_report.py to $PATH|
 |simple_three_step.cwl | simple_three_step_input.yml | Workflow | simple_two_step, dump out subject sequences | query, db, add location of parse_blast_report.py to $PATH|
 |magicblast2bami.cwl | magicblast2bami_input.yml | Workflow| Magic-BLAST run; SAM to indexed BAM| database, Workflows from [here][cwl_mods]|

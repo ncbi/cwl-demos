@@ -1,15 +1,10 @@
 user_db_dir: 
   class: Directory
   path:         blastdb
+# human
 user_search_db: GCF_000001405.38_top_level
-user_sra_flag: SRR5009494
-#user_query:
-#  class: File
-#  path: u00001.fsa
+user_sra_flag: SRR6757254
 user_outfmt_flag: sam
-user_num_threads_flag: 32
-user_isbam_flag: true
-user_view_results: SRR5009494.bam
-user_sort_results: SRR5009494_sort.bam
-
+user_num_threads_flag: 12
+user_outflag: SRR6757254.sam
 

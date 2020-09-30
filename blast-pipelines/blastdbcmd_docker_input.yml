@@ -4,7 +4,7 @@ entry_batch_flag:
   class: File
   path:  accs.in
 
-db_flag: landmark_v5
+db_flag: landmark
 
 #target_flag: true
 

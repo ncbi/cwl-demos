@@ -1,0 +1,26 @@
+user_db_dir:
+  class: Directory
+  path: blastdb
+
+user_db_flag: landmark
+
+user_query1:
+   class: File
+   path: 559292.acc
+
+user_taxid_flag1: "4896"
+
+user_query2:
+   class: File
+   path:  4896.acc
+
+user_taxid_flag2: "559292"
+
+user_out_flag1: 4896.tab
+user_out_flag2: 559292.tab
+
+user_outfmt_flag: "6 qaccver saccver bitscore pident qcovhsp qlen length"
+
+user_out_results: rbh_output.tab
+
+user_num_threads_flag: 8

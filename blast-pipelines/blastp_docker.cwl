@@ -32,7 +32,6 @@ inputs:
     inputBinding:
         position: 2
         prefix: -db
-#        valueFrom: $(inputs.blastdb_dir.path)/$(inputs.db_flag)
   num_threads_flag:
     type: int? 
     default: 4
