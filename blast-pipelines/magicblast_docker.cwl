@@ -46,17 +46,22 @@ inputs:
      inputBinding:
         position: 5
         prefix: -taxids
+  max_intron_flag:
+    type: int? 
+    inputBinding:
+        position: 6
+        prefix: -max_intron_length
   out_flag:
     type: string 
     default: "magicblast.sam"
     inputBinding:
-        position: 6
+        position: 7
         prefix: -out
   outfmt_flag:
     type: string 
     default: "sam"
     inputBinding:
-        position: 7
+        position: 8
         prefix: -outfmt
 
 outputs:

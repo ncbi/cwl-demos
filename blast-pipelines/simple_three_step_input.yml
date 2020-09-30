@@ -1,7 +1,7 @@
 user_db_dir: 
   class: Directory
   path:         blastdb
-user_search_db: landmark_v5
+user_search_db: landmark
 user_query:
   class: File
   path: p02185.fsa

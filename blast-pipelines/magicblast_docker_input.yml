@@ -1,7 +1,3 @@
-#query_flag:
-#   class: File
-#   path:  u00001.fsa
-
 sra_flag: SRR5009494
 
 blastdb_dir:
@@ -11,3 +7,5 @@ blastdb_dir:
 db_flag: GCF_000001405.38_top_level
 
 out_flag: SRR5009494.sam
+
+num_threads_flag: 12
