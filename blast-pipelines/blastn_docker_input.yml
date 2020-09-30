@@ -1,6 +1,6 @@
 query_flag:
    class: File
-   path:  query.fasta
+   path:  u93236.fsa
 
 db_flag: GCF_000001405.38_top_level
 
