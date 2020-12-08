@@ -1,0 +1,12 @@
+archive_flag:
+   class: File
+   path:  batch_refseq.arc
+
+blastdb_dir:
+  class: Directory
+  path: blastdb
+
+outfmt_flag: "7 std sscinames sskingdoms"
+#outfmt_flag: "18"
+
+out_flag: blastp_refseq.tab
