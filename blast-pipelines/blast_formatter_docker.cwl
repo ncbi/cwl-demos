@@ -1,11 +1,11 @@
 #!/usr/bin/env cwl-runner
 
 # Runs blast_formatter to produce output
-# 6 qseqid sseqid bitscore pident qcovhsp qlen length
+# Default is:
 #
 # blast_formatter -archive 
-#  -out blast.out
-# -outfmt "7 std sscinames"
+#  -out blast.tab
+# -outfmt "7"
 
 cwlVersion: v1.0
 class: CommandLineTool
